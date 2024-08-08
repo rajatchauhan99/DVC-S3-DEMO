@@ -1,3 +1,5 @@
+# version 2
+
 import numpy as np
 import pandas as pd
 
@@ -15,7 +17,7 @@ os.makedirs(raw_data_path, exist_ok=True)
 df.to_csv(os.path.join(raw_data_path, "raw.csv"), index = False)
 
 
-df = df[3:]
+df = df[:]
 
 processed_data_path = os.path.join("./data", 'processed')
 
